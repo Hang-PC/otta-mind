@@ -26,12 +26,21 @@ Otta-Mind is a simple and intuitive app designed to help you stop overthinking a
 
 ### Home Page
 
-A welcoming landing page with an inspiring tagline and calming visuals.
+<p align="center">
+    <picture>
+    <img alt="otta-mind" src="./screenshorts/home-page.png" width=90%>
+    </picture>
+</p>
 
 ### Thoughts Page
 
 - **Add Thoughts**: An input box to jot down what’s on your mind.
 - **Thoughts List**: A visually appealing list to manage your thoughts.
+<p align="center">
+    <picture>
+    <img alt="otta-mind" src="./screenshorts/thoughts-page.png" width=90%>
+    </picture>
+</p>
 
 ### Choose One Effect
 
