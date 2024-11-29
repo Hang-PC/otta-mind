@@ -7,11 +7,11 @@ const Home: React.FC = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-10 md:p-24 text-center">
       <div className="max-w-2xl mx-auto">
-        <Logo />
-        <h1 className="text-4xl font-bold mb-6 text-gray-800">
-          Otta-Mind: Focus. Decide. Act.
+        <h1 className="flex items-center flex-col text-4xl font-bold mb-6 text-gray-800 dark:text-gray-200">
+          <Logo />
+          Focus. Decide. Act.
         </h1>
-        <p className="text-xl mb-8 text-gray-600">
+        <p className="text-xl mb-8 text-gray-600 dark:text-gray-400">
           Combat overthinking by focusing on one thought at a time.
         </p>
         <Link

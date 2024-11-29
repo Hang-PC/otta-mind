@@ -27,7 +27,9 @@ const ThoughtsPage: React.FC = () => {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-8 md:p-24">
-      <h1 className="text-3xl font-bold mb-8 text-gray-800">Your Thoughts</h1>
+      <h1 className="text-3xl font-bold mb-8 text-gray-800 dark:text-gray-200">
+        Your Thoughts
+      </h1>
 
       <div className="w-full max-w-2xl mb-8">
         <div className="flex items-center">
@@ -36,7 +38,7 @@ const ThoughtsPage: React.FC = () => {
             value={newThought}
             onChange={(e) => setNewThought(e.target.value)}
             placeholder="What's on your mind?"
-            className="flex-grow p-3 rounded-l-lg border-2 border-blue-300 focus:outline-none focus:border-blue-500 text-gray-800"
+            className="flex-grow p-3 rounded-l-lg border-2 border-blue-300 dark:border-blue-700 focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-700"
             onKeyPress={(e) => e.key === 'Enter' && addThought()}
           />
           <button
@@ -56,7 +58,7 @@ const ThoughtsPage: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 relative text-gray-800"
+              className="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 relative text-gray-800 dark:text-gray-200"
             >
               {thought}
               <button
@@ -85,11 +87,13 @@ const ThoughtsPage: React.FC = () => {
             exit={{ opacity: 0, scale: 0.8 }}
             className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4"
           >
-            <div className="bg-white rounded-lg p-8 max-w-md w-full text-center relative">
-              <h2 className="text-2xl font-bold mb-4 text-gray-800">
+            <div className="bg-white dark:bg-gray-800 rounded-lg p-8 max-w-md w-full text-center relative">
+              <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">
                 Here's your thought! Take action!
               </h2>
-              <p className="text-xl mb-6 text-gray-600">{selectedThought}</p>
+              <p className="text-xl mb-6 text-gray-600 dark:text-gray-400">
+                {selectedThought}
+              </p>
               <button
                 onClick={() => setSelectedThought(null)}
                 className="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-300"
