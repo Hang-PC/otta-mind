@@ -1,7 +1,7 @@
 {
   "name": "otta-mind",
   "private": true,
-  "homepage": "https://hang-pc.github.io/otta-mind",
+  "homepage": "https://hang-pc.github.io/otta-mind/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
