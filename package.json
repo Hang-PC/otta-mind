@@ -1,7 +1,6 @@
 {
   "name": "otta-mind",
   "private": true,
-  "homepage": "https://hang-pc.github.io/otta-mind/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,9 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --ignore-path ./.prettierignore --write .",
-    "prepare": "husky",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "prepare": "husky"
   },
   "husky": {
     "hooks": {
